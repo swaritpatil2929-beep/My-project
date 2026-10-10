@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Riya Travels</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+<a class="logo" href="index.html">✈ Riya Travels</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="packages.html">Packages</a>
+<a class="active" href="contact.html">Contact</a>
+</nav>
+</header>
+<section class="page-banner">
+<h1>Let's Plan Your Trip</h1>
+<p>Tell us about your dream holiday.</p>
+</section>
+<section class="contact-layout section">
+<div class="contact-info">
+<p class="eyebrow">GET IN TOUCH</p>
+<h2>We'd Love to Hear From You</h2>
+<p>Contact our team to discuss destinations, travel dates,
+group tours, and customized holiday packages.</p>
+<div class="info-item">
+<span>📍</span>
+<div><h3>Our Office</h3><p>Update with your business address</p></div>
+</div>
+      <div class="info-item">
+        <span>📞</span>
+        <div><h3>Phone</h3><p>+91 XXXXX XXXXX</p></div>
+      </div>
+      <div class="info-item">
+        <span>✉️</span>
+        <div><h3>Email</h3><p>hello@riyatravels.example</p></div>
+      </div>
+    </div>
+
+    <form class="contact-form" id="bookingForm">
+      <h2>Travel Inquiry Form</h2>
+
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+
+      <label for="destination">Preferred Destination</label>
+      <select id="destination" name="destination" required>
+        <option value="">Choose a destination</option>
+        <option>Kashmir Paradise</option>
+        <option>Goa Beach Escape</option>
+        <option>Royal Rajasthan</option>
+        <option>Nature Retreat</option>
+        <option>Customized Tour</option>
+      </select>
+
+      <label for="date">Preferred Travel Date</label>
+      <input id="date" name="date" type="date" required>
+
+      <label for="travelers">Number of Travelers</label>
+      <input id="travelers" name="travelers" type="number" min="1" value="2" required>
+
+      <label for="message">Additional Details</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us about your travel plans"></textarea>
+
+      <button type="submit" class="btn">Send Inquiry →</button>
+      <p id="formMessage" role="status"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Riya Travels. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
